@@ -1,0 +1,25 @@
+{
+  "name": "online_food",
+  "version": "1.0.0",
+  "main": "src/server.ts",
+  "repository": "git@github.com:piagja/online_food.git",
+  "author": "piagja <piagja@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsnd --respawn ./src/App.ts",
+    "test": "jest --notify"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.15.0",
+    "dotenv": "^16.0.3",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  }
+}

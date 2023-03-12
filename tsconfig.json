@@ -18,5 +18,11 @@
   "exclude": [
     "src/**/*.spec.ts",
     "node_modules"
-  ]
+  ],
+  "baseUrl": "./src",
+  "paths": {
+    "@/*": [
+      "./*"
+    ]
+  },
 }

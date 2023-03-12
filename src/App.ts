@@ -1,11 +1,13 @@
-require('dotenv').config()
+import express, { Application } from 'express'
+import cors from 'cors'
 
-import express from 'express'
+const app: Application = express()
 
-const app = express()
+app.use(cors())
+app.use(express.json())
 
-const { API_PORT } = process.env
-
-app.listen(process.env.API_PORT, () => {
-  console.info(`Server running on ${API_PORT}`)
-})
+export const start = (PORT: number) => {
+  app.listen(PORT, () => {
+    console.info(`Server running in ${PORT} port`)
+  })
+}

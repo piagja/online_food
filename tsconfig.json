@@ -3,6 +3,7 @@
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
+    "lib": ["ESNext"],
     "noImplicitAny": false,
     "removeComments": true,
     "preserveConstEnums": true,
@@ -10,19 +11,19 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
     "declaration": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "strictFunctionTypes": true
   },
-  "include": [
-    "src/**/*.ts"
+  "include": ["src/**/*.ts", "src/test/**/*.ts"],
+  "exclude": ["node_modules", "dist"],
+  "rootDir": [
+    "./src"
   ],
-  "exclude": [
-    "src/**/*.spec.ts",
-    "node_modules"
-  ],
-  "baseUrl": "./src",
+  "baseUrl": ".",
   "paths": {
-    "@/*": [
-      "./*"
-    ]
-  },
+    "@src/*": ["./src/*"],
+  }
 }

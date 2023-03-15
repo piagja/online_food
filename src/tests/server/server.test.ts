@@ -1,9 +1,9 @@
-require('dotenv').config()
-
 import { app } from '../../App'
 
 import * as http from 'http'
 import supertest from 'supertest'
+
+require('dotenv').config()
 
 const { API_PORT } = process.env
 

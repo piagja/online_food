@@ -1,5 +1,5 @@
-require('dotenv').config()
 import { start } from './App'
+require('dotenv').config()
 
 const API_PORT = process.env.API_PORT || 3003
 
